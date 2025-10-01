@@ -14,7 +14,7 @@ create table tb_livros (
     id int not null auto_increment primary key,
     nomeLivro varchar(100),
     editora varchar(100),
-    ano date,
+    ano int,
     disponivel boolean default false,
     usuario_id int,
     foreign key (usuario_id) references tb_usuario(id)
